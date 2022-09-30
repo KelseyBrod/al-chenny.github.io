@@ -1,0 +1,146 @@
+
+
+body{
+    background: url("../images/hexagon.png"), rgb(255, 231, 160);
+    background-size: 200px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header{
+    margin: auto;
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+    width: 50%;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, .7);
+    border: 10px inset white;
+    width: 50%;
+    margin: 3% auto 3% auto;
+    padding: .2%
+}
+
+ul{
+    list-style-position: inside;
+    padding: 2px
+}
+
+q{font-family: 'Source Sans Pro', sans-serif, cursive}
+
+p {
+    text-align: center;}
+
+.big-pic {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.outside {
+    background-image: url("../images/grass-wavy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255 .7);
+    color: rgb(228, 156, 0);
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    padding: 2px;
+}
+
+a[tabindex]:focus {
+    color: royalblue;
+    outline: none;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top: 12px solid white;
+}
+
+.grid-menu {
+    padding: 0px;
+    size: 10px;
+}
+
+
+#jerry {
+    transform: rotate(0.3turn);
+    width: 25%;
+    height: auto;
+}
+
+#worker-bee {
+    margin-left: 10%;
+    transform: rotate(0.62turn);
+    width: 35%;
+    height: auto;
+}
+
+.body-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25%;
+}
+
+#bee1{
+    margin: top;
+    transform: rotate(0.75turn);
+    width: 30%;
+    height: auto;
+}
+
+#queen{
+    margin: left;
+    width: 45%;
+    transform: rotate(-0.2turn);
+}
+
+.bee:hover {
+    transition: 1s;
+    transform: rotate(1turn);
+}
+
+.body-img{
+    display: inline-block;
+    float: left;
+    max-width: 20%;
+    max-height: auto;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+input[type=checkbox] {
+    display: none;
+  }
+  
+  .container img {
+    margin: 100px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+  }
+  
+  input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
