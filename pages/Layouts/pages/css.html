@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="Allison Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How to build a website</title>
+        <link href="../styles/style2.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html"><h1>CSS Basics</h1></a>
+            <p>here are some common ways to style a website</p>
+        </header>
+        <main>
+            <div class="flex-box">
+                <div class="flex-con">
+                    <h3>element selector</h3>
+                         <p>element.{</p>
+                         <p>put your stuff: in here;</p>
+                        <p>}</p>
+                </div>
+                <div class="flex-con">
+                    <h3>linking a stylesheet</h3>
+                    <p>standard practice is to link a style sheet containing all the css tags instead of clogging up the html file with style elements</p>
+                    <p>link href="../styles/style.css" type="text/css" rel="stylesheet"</p>
+                </div>
+                <div class="flex-con">
+                    <h3>need more help?</h3>
+                    <p>although honestly to search for specifics–– when in doubt–– <a href="https://www.w3schools.com/default.asp">w3schools.com</a> </p>
+                </div>
+            </div>
+
+            <h2>elements{styles}</h2>
+            <div class="grid-container">
+                <div class="word">body</div>
+                <div class="def">
+                    <ul>
+                        <li>background-color, background-image</li>
+                        <li>text-align: center; left; right; justify;</li>
+                    </ul>
+                </div>
+                <div class="word">img</div>
+                <div class="def">
+                    <ul>
+                        <li>border</li>
+                        <li>border-radius</li>
+                        <li>width/height</li>
+                    </ul>
+                </div>
+                <div class="word">sizing</div>
+                <div class="def">
+                    <ul>
+                        <li>% - size is determined by the size of the screen. Good for responsive design!</li>
+                        <li>fr - size is "fraction" of the screen. Good for responsive design!</li>
+                        <li>px - size is set number of pixels</li>
+                        <li>em - size is determined by size relative to the current font in use. Good for responsive design!</li>
+                    </ul>
+                </div>
+                <div class="word">:pseudoclass</div>
+                <div class="def">
+                    <p>edits styles of the specific state of an element</p>
+                        <ul>
+                            <li>:hover - when hovering over an element</li>
+                            <li>:link - when a link hasn't been visited</li>
+                            <li>:visited - when a link has been visited</li>
+                            <li>
+                        </ul>
+                </div>
+                <div class="word">transition</div>
+                <div class="def">
+                    <p>a common way to make an interactive websites is by using hover animations. A simple animation can be made with a by using {transtion: #s} and changing styles such as: </p>
+                    <p>transform, color, rotate etc.</p>
+                </div>
+            </div>
+
+
+            <h2>Fonts</h2>
+                <p>To import a font into a document head to <a href="https://fonts.google.com/">fonts.google.com</a></p>
+                <p>select a font and place the link element in the head, and the css property in the stylesheet</p>
+                <p></p>
+            <h2>Box Model</h2>
+            <img src="../images/box_model.png">
+
+            <footer>
+                <ul id="footer-items">
+                    <li>&copy; 2022 Allison Chen</li>
+                    <li></li>
+                    <li><a href="../index.html">home</a></li>
+                </ul>
+            </footer>
+        </main>
+    </body>
+
+    </html>

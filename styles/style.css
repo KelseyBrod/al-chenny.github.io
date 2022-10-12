@@ -150,6 +150,7 @@ nav {
     align-items: center;
     background: rgba(150, 153, 156, 1); /*  play with color*/
     padding: 7px;
+    border: 3px solid rgba(150, 153, 156, 1);
 }
 
 
