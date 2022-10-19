@@ -97,7 +97,7 @@ nav {
 
 #projects-grid{
     display: grid;
-    max-width: 960px;
+    max-width: 1000px;
     grid-template-columns: 1fr 1fr 1fr; /* what does fr mean? fraction of the given space*/
     grid-template-rows: auto;
     grid-column-gap: 10px;
@@ -149,8 +149,9 @@ nav {
     grid-column-gap: 15px;
     align-items: center;
     background: rgba(150, 153, 156, 1); /*  play with color*/
-    padding: 7px;
+    padding: 14px;
     border: 3px solid rgba(150, 153, 156, 1);
+    border-radius: 8px
 }
 
 
