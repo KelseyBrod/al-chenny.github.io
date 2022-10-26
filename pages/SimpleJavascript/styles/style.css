@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-color: #232323;
+    font-family: 'Assistant', sans-serif;
+}
+
+#inText{
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 10px
+}
+
+#rand {
+    color: white;
+    font-size: 5%;
+}
+
+form{
+    color: white;
+}
+
+#rand{
+    padding: 1.5%;
+}
+
+#colorH{
+    font-family: 'Inspiration', cursive;
+    color: white;
+    size: 100px;
+}
+
+#submit-button{
+    background-color: rgba(255, 255, 255, 0.354);
+    color: white;
+}
+
