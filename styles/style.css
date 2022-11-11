@@ -292,7 +292,15 @@ footer h1{
     font-size: 100px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/
+#social{
+    color: rgb(112, 112, 112) !important; 
+}
+
+#social:hover{
+    color: black !important;
+}
+
+@media only scrbeen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/
     #projects-grid{
     grid-template-columns: 1fr 1fr;
     }
