@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang = "en" dir="ltr">
+    <meta name="author" content ="Allison Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio of Web Work</title>
+    <link href="../styles/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    form > input, form > textarea, form > label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    </style>
+
+<body>
+        <header>
+            <a href="../index.html"><h1>Allison Chen's</h1></a>
+            <nav>
+                <a href="projects.html"><li>projects</li></a>
+                <a href="about-me.html"><li>about</li></a>
+                <a href="contact.html"><li>contact</li></a>
+            </nav>
+
+        </header>
+
+        <main>
+
+        <form name="contact" method="post">
+            <h3>I may never respond! But give me your data!</h3> <br>
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Subject</label>
+            <input type="text" name="subject">
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+        
+            <input type="submit" name="send" value="Send Message">
+        </form>
+
+        </main>
+
+    <script> /* form taken from in class example */
+        var form = document.forms["contact"];
+        form.addEventListener('submit',contact_submit,false);
+
+        function contact_submit(e) {
+            // Stop Form From Submitting
+            e.preventDefault();
+
+            // Set Initial Variables
+            var target = e.target || e.srcElement;
+            var to = 'someone@example.com';
+            var uri = 'mailto:' + to;
+            var body = '';
+
+            // Set Form Values to Variables
+            var name = target.elements['name'].value;
+            var subject = target.elements['subject'].value;
+            var phone = target.elements['phone'].value;
+            var message = target.elements['message'].value;
+
+            // Build Body / Message with all Input Fields
+            body += message + "\r\n\r\n";
+            body += "Name: " + name + "\r\n";
+            body += "Phone Number: " + phone + "\r\n";
+
+            // Build final Mailto URI
+            uri += '?subject=' + encodeURIComponent(subject);
+            uri += '&body=' + encodeURIComponent(body);
+
+            // Open Mailto in New Window / Tab
+            window.open(uri,'_blank');
+        }
+    </script>
+
+
+        <footer><h1>Contacts</h1></footer>
+
+    </body>
+</html>
