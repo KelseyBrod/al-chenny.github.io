@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage - Duke Undergraduate Admissions</title>
     <link href="styles/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link hr<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow&display=swap" rel="stylesheet">
 </head>
 
 
@@ -16,9 +16,9 @@
         <div>
             <nav class="menu"> <!--https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
                 <ul>
-                    <a class="menuItem"><li>Apply</li></a>
-                    <a class="menuItem"><li>Financial</li></a>
-                    <a class="menuItem"><li>Explore</li></a>
+                    <a class="menuItem" href="#Explore"><li>Explore</li></a>
+                    <a class="menuItem" href="#Apply"><li>Apply</li></a>
+                    <a class="menuItem" href="https://admissions.duke.edu/"><li>Credits</li></a>
                 </ul>
             </nav>
         </div>
@@ -52,14 +52,35 @@
         </div>
     </div>
 
-    <h2 class="impact" id="left"> OUR RICH HISTORY</h2>
+    <h2 class="impact" id="Explore"> OUR RICH HISTORY</h2>
 
     <div class="flex">
         <img class="drop" src="media/james-duke.jpeg">
+        <p class="text">Duke University was founded in part by James Buchanan Duke, aka big tobacco daddy. The land was taken from Native Americans in order to build these gorgeous gothic buildings that are totally not modeled off of Princeton.</p>
+        <div class="break"></div>
+        <p class="text">Duke begs to ask the question: "What if Conneticut was in the South?" Taking on inspiration from Ivy Leagues of similar caliber (according to rankings by US news and world reports), Duke has recently introduced QuadEx. In this system, administration can pretend that they are ruling over a world of wizards, similar to the effects of the Harry Potter series.</p>
+        <img class="drop" id="campus" src="media/campus-photo.jpg">
+        
     </div>
 
-    <h2 class="impact">APPLY</h2>
-    <div>
+    <div class="quote-block">
+        <blockquote class="zitat1">
+            talented, brilliant, incredible, amazing, show stopping, spectacular, never the same, totally unique, completely not ever been done before
+            <cite>Lady Gaga, CO '20-never</cite>
+        </blockquote>
+    </div>
+    <h2 class="impact" id="Apply">APPLY</h2>
+
+    <div class="apply-grid">
+        <div class="box-dates">
+            <div class="apply">
+                <h3 id="nice">Overview:</h3>
+                <div class="date-grid">
+                    </li><a class="answers" href="https://www.commonapp.org/"><p>What are my chances of getting in?<i class="arrow right"></i></p></a>
+                    <a class="answers" href="http://powerball.com/"><p>An overview of the application process<i class="arrow right"></i></p></a>
+                </div>
+            </div>   
+        </div>
         <div class="box-dates">
             <h3 id="nice">Important Dates</h3>
             <ul class="date-grid">
@@ -68,17 +89,39 @@
                     <div class="title">Early Decision Deadline</div>
                 </li>
                 <li class="date-line">
-                    <div class="date">Jan 3</div>
+                    <div class="date">Jan 3   </div>
                     <div class="title">Regular Decision Deadline</div>
                 </li>
                 <li class="date-line">
-                    <div class="date">Mar 15</div>
+                    <div class="date">Mar 15   </div>
                     <div class="title">Transfer Application Deadline</div>
                 </li>
             </ul>
           </div>
     </div>
 
+    <div class="quote-block" id="photo-back">
+        <blockquote class="zitat1">
+            It's like Harvard! But in the South!
+            <cite>David Smith Jr & David Smith Sr, CO'23 & C0'89</cite>
+        </blockquote>
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <ul> 
+            <li><a href="mailto:dukepresident@duke.edu">Contact us</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#Apply">Apply</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         © duke.edu 2022 | all rights and money reserved
+        </div>
+        </div>
+        </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>

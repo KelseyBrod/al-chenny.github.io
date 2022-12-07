@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
 body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -20,6 +21,7 @@ body {
 header{
     position: fixed;
     background-color: white;
+    z-index: 100;
 
 }
 
@@ -53,10 +55,12 @@ li{
 
 #closeIcon{
     display: none;
+    z-index: 1001;
 }
 
 #menuIcon{
     display: block;
+    z-index: 1001;
 }
 
 .menuItem {
@@ -64,7 +68,13 @@ li{
     margin: 4rem 4rem;
     font-size: 4rem;
     justify-content: left;
+    text-decoration: none;
+    color: white;
   }
+
+.menuItem:hover{
+    color: rgba(255, 255, 255, 0.516)
+}
 
 .menu {
     position: fixed;
@@ -98,7 +108,7 @@ ul{
 .impact{
     padding: 3%;
     color: #0028bb;
-    font-size: 550%;
+    font-size: 570%;
     line-height: 54px;
     font-weight: 1400;
     font-family: 'Anton', sans-serif;
@@ -106,8 +116,9 @@ ul{
     letter-spacing: 8px;
 }
 
-#left{
+#Explore{
     text-align: right;
+    margin-top: 1rem;
 }
 
 .first{
@@ -125,7 +136,9 @@ ul{
 .tenting img{
     flex-shrink: 0;
     min-width: 100%;
+    height: 600px;
     z-index: -3;
+    object-fit: cover;
 }
 
 .stats-menu{
@@ -141,11 +154,11 @@ ul{
 }
 
 .stats-item{
-    height: 15rem;
-    width: 15rem;
+    height: 17rem;
+    width: 17rem;
     margin-left: 3rem;
     margin-right: 3rem;
-    box-shadow: -10px 10px #0028bb;
+    box-shadow: -15px 15px #0028bb;
     padding: 3%;
     background: white;
     color: #0028bb;
@@ -158,6 +171,7 @@ ul{
 
 h3{
     font-size: 3.8rem;
+    color: #0028bb;
 }
 
 #white{
@@ -168,6 +182,7 @@ h3{
 
 .stats-item p{
     font-size: 1.8rem;
+    font: Barlow;
 }
 
 .progress-container {
@@ -187,37 +202,233 @@ h3{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 3%;
+    justify-content: center;
 }
 
 .box-dates{
     background: rgb(237, 237, 237);
     margin: 3%;
-    width: 50%;
+    width: 32rem;
+    height: 22rem;
+}
 
+.apply-grid{
+    display: flex;
+    justify-content: center;
 }
 
 .date-line{
     display: flex;
     grid-template-columns: 1fr 3fr;
     color: #0028bb;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 }
 
-#nice{
-    
-}
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: .6rem auto 3rem auto;
+    width: 80%;
+
 }
 
 .drop{
-    box-shadow: -10px 10px #0028bb;
+    box-shadow: -15px 15px #0028bb;
+}
+
+#campus{
+    max-width: 30%;
+    height: auto;
+    box-shadow: 15px 15px #0028bb !important;
+}
+
+#campus img{
+    float:right;
 }
 
 #JD{
     padding-right: 3%;
+}
+
+.text{
+    font-size: 1.5rem;
+    width: 60%;
+    padding: 4%;
+    text-align: left;
+}
+
+.quote-block{
+    background:rgb(237, 237, 237);
+    width: 100%;
+    justify-content: center;
+    padding: 2%;
+    z-index: -4;
+    margin: auto;
+}
+
+/*modified https://codepen.io/cliftwalker/pen/XJaEXY */
+blockquote{
+    font-size: 2em;
+    width:80%;
+    margin: 50px auto;
+    padding: 4% 3%;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #555555;
+    border-right:solid 10px #0028bb ;
+    line-height:1.4;
+    position: relative;
+    background:#EDEDED;
+  }
+  
+  blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#0028bb;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-25px;
+    
+  }
+  
+  blockquote::after{
+    content: '';
+  }
+  
+  blockquote cite{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+  }
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+    margin: .8rem auto;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    background: #0028bb;
+    color: white;
+
+}
+
+.link-flex{
+    display: inline-grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    margin: auto;
+    font-size: .4rem;
+    color: white;
+  }
+
+.footer-item{
+    font-size: .4rem;
+    color: white; 
+}
+
+.date{
+    padding: 1%;
+    font-weight: bold;
+    border-top: solid 1px #0028bb;
+}
+
+#nice{
+    margin: 1%;
+    margin-left: 2%;
+    color: #0028bb;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#how{
+    width: fit-content;
+    color: #0028bb;
+    justify-content: center;
+
+}
+
+.title{
+    padding: 1%;
+    border-top: solid 1px #0028bb;
+}
+
+#photo-back{
+    background-image: url(../media/line.jpeg) !important;
+    background-color: rgb(0, 0, 0);
+    background-size: fill;
+    background-position: center;
+    
+}
+
+.footer{
+    background:#0028bb;
+    padding:30px 0px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color: white;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color: rgba(255, 255, 255, 0.516);
+    }
+    
+    .footer .row ul{
+    width:100%;
+    font-size: 3em;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:0;
+    margin:0% 1%;
+    }
+
+    .arrow {
+        border: solid #0028bb;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        size: 2rem;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+.apply{
+    
+}
+.answers{
+    font-size: 1.5rem;
+    padding: 2%;
+    text-decoration: none;
+    color: ;
 }
 @media only screen and (max-width: 600px){
     .hamburger{
@@ -232,10 +443,55 @@ h3{
     }
     .stats-menu{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;     
+        grid-template-rows: 1fr 1fr 1fr;    
     }
 
     .stats-item{
-        margin: 50px;
+        margin: 60px auto;
+        padding: 3%;
+        height: 15rem;
+        width: 15rem;
+        font-size: 4rem;
+    }
+
+    blockquote::before{
+        top:-60px;
+    }
+
+    .tenting img{
+        height: 300%;
+        object-fit: cover;
+        margin: 20% auto;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .flex{
+        width: 90%;
     }
 }
+
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+
+    .apply-grid{
+        flex-direction: column;
+    }
+
+    #campus{
+        max-width: 70%;
+    }
+    }
