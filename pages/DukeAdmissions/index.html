@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang = "en" dir="ltr">
+    <meta name="author" content ="Allison Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage - Duke Undergraduate Admissions</title>
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="header-flex">
+        <img id= "logo" src="media/duke-logo.svg">
+        <div>
+            <nav class="menu"> <!--https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+                <ul>
+                    <a class="menuItem"><li>Apply</li></a>
+                    <a class="menuItem"><li>Financial</li></a>
+                    <a class="menuItem"><li>Explore</li></a>
+                </ul>
+            </nav>
+        </div>
+        <button class="hamburger">
+            <i id="menuIcon"><img class="butt" src="media/menu_blue_48dp.png"></i>
+            <i id="closeIcon"><img class="butt" src="media/close_blue_48dp.png"></i>
+        </button>
+        </div> 
+        
+        <div class="header"> <!--https://www.w3schools.com/howto/howto_js_scroll_indicator.asp-->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div> 
+        </div>
+    </header>
+
+
+
+    <div class="first">
+        <h2 class="impact"> HOW MUCH MONEY CAN</h2>
+        <h2 class="impact">YOU GIVE US IN 4 YEARS?</h2>
+    </div>
+
+
+    <div class="tenting">
+        <img src="media/tenting.jpg">
+        <div class="stats-menu bottom-div">
+            <div class="stats-item"><h3>6,542</h3><p>undergraduate students –– but it feels like 500</p></div>
+            <div class="stats-item"><h3>6%</h3><p>acceptance rate</p></div>
+            <div class="stats-item"><h3>$300k+</h3><p>with costs rising faster than inflation!</p></div>
+        </div>
+    </div>
+
+    <h2 class="impact" id="left"> OUR RICH HISTORY</h2>
+
+    <div class="flex">
+        <img class="drop" src="media/james-duke.jpeg">
+    </div>
+
+    <h2 class="impact">APPLY</h2>
+    <div>
+        <div class="box-dates">
+            <h3 id="nice">Important Dates</h3>
+            <ul class="date-grid">
+                <li class="date-line">
+                    <div class="date">Nov 1</div>
+                    <div class="title">Early Decision Deadline</div>
+                </li>
+                <li class="date-line">
+                    <div class="date">Jan 3</div>
+                    <div class="title">Regular Decision Deadline</div>
+                </li>
+                <li class="date-line">
+                    <div class="date">Mar 15</div>
+                    <div class="title">Transfer Application Deadline</div>
+                </li>
+            </ul>
+          </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

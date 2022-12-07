@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    
+}
+
+header{
+    position: fixed;
+    background-color: white;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.header-flex {
+    width: 100%;
+}
+
+#logo{
+    padding: 2rem;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: white;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+
+  }
+
+.butt{
+    object-fit: contain;
+}
+
+#closeIcon{
+    display: none;
+}
+
+#menuIcon{
+    display: block;
+}
+
+.menuItem {
+    display: block;
+    margin: 4rem 4rem;
+    font-size: 4rem;
+    justify-content: left;
+  }
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    right: 1000;
+    left: 1000;
+    bottom: 0;
+    z-index: 1000;
+    background: #16349c;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    justify-content: right;
+    width: 25%;
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+    text-align: right;
+  }
+
+ul{
+    font-size: 500%;
+}
+
+.showMenu {
+    transform: translateY(0%);
+  }
+
+.impact{
+    padding: 3%;
+    color: #0028bb;
+    font-size: 550%;
+    line-height: 54px;
+    font-weight: 1400;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+#left{
+    text-align: right;
+}
+
+.first{
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+
+.tenting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenting img{
+    flex-shrink: 0;
+    min-width: 100%;
+    z-index: -3;
+}
+
+.stats-menu{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    position: absolute;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: -2;
+
+}
+
+.stats-item{
+    height: 15rem;
+    width: 15rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    box-shadow: -10px 10px #0028bb;
+    padding: 3%;
+    background: white;
+    color: #0028bb;
+    justify-content: center;
+}
+
+.stats-item h3{
+    font-size: 3.8rem;
+}
+
+h3{
+    font-size: 3.8rem;
+}
+
+#white{
+    color: white;
+    position: absolute;
+}
+
+
+.stats-item p{
+    font-size: 1.8rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #0028bb;
+    width: 0%;
+  }
+
+.date-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 3%;
+}
+
+.box-dates{
+    background: rgb(237, 237, 237);
+    margin: 3%;
+    width: 50%;
+
+}
+
+.date-line{
+    display: flex;
+    grid-template-columns: 1fr 3fr;
+    color: #0028bb;
+    font-size: 1.4rem;
+}
+
+#nice{
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.drop{
+    box-shadow: -10px 10px #0028bb;
+}
+
+#JD{
+    padding-right: 3%;
+}
+@media only screen and (max-width: 600px){
+    .hamburger{
+        height: 50px;
+    }
+    .first{
+        padding-top: 20%;
+
+    }
+    .impact{
+        line-height: 100%;
+    }
+    .stats-menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;     
+    }
+
+    .stats-item{
+        margin: 50px;
+    }
+}
